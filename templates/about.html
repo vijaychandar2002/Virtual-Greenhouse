@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="{{url_for('login')}}">Login</a></li>
+                <li><a href="{{url_for('register')}}">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <p>A virtual greenhouse is a computer-generated simulation of a greenhouse that can be used for educational or research purposes. It can be created using computer software and can provide an interactive environment for studying different aspects of greenhouse cultivation, such as plant growth, climate control, and pest management.</p>
+        <p>A virtual greenhouse can simulate various environmental conditions, such as temperature, humidity, and light levels, and allow users to experiment with different scenarios to understand their effects on plant growth and development. It can also be used to simulate different pest and disease infestations and explore strategies for their control. Virtual greenhouses can be used in educational settings to teach students about greenhouse cultivation and the principles of plant growth, as well as in research settings to study plant physiology, ecology, and biotechnology. They can also be used by growers and horticulturists to test new technologies and methods for greenhouse cultivation before implementing them in real-world settings.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Virtual Greenhouse</p>
+        </div>
+    </footer>
+</body>
+</html>

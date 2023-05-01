@@ -1,0 +1,33 @@
+<!-- sensor_status.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sensor Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sensor_status.css') }}">
+</head>
+<body>
+	<h1>Sensor Status</h1>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Plant ID</th>
+			<th>Greenhouse ID</th>
+			<th>Temperature</th>
+			<th>Humidity</th>
+			<th>Light</th>
+			<th>CO2</th>
+		</tr>
+		{% for row in rows %}
+		<tr>
+			<td>{{ row.id }}</td>
+			<td>{{ row.plantid }}</td>
+			<td>{{ row.greenhouseid }}</td>
+			<td>{{ row.temperature }}</td>
+			<td>{{ row.humidity }}</td>
+			<td>{{ row.light }}</td>
+			<td>{{ row.co2 }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

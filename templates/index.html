@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Greenhouse Dashboard</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">					
+	</head>
+	<body class="greenhouse">
+		<div class="topright">
+			<a href="{{ url_for('logout') }}" id="topright" class="btn">Logout</a>
+		</div>
+		<div align="center">
+			<div align="center" class="border">
+				<div class="header">
+					<h3 class="word">Greenhouse Dashboard</h3>
+				</div>
+				<h3 class="bottom">
+					{{session.username}}
+				</h3>
+				<div>
+					<button onclick="window.location.href='/sensor_status'" class="btn">Existing Greenhouse</button>
+					<button onclick="window.location.href='/create_greenhouse'" class="btn">Create New Greenhouse</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

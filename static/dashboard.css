@@ -1,0 +1,94 @@
+header {
+    background-color: #55ba97;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #55ba97;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+canvas {
+    width: calc(33.33% - 0.5rem);
+    margin-bottom: 1rem;
+}
+    
+@media (max-width: 768px) {
+    canvas {
+    width: calc(50% - 0.5rem);
+    }
+    }
+    
+@media (max-width: 480px) {
+    canvas {
+        width: 100%;
+    }
+}
+    
+.greenhouse-status canvas {
+    background-color: #a2d2c2;
+}
+    
+.plant-status canvas {
+    background-color: #f1c232;
+}
+        
+.sensor-status canvas {
+    background-color: #6fa8dc;
+}

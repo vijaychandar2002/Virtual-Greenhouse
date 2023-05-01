@@ -1,0 +1,38 @@
+body {
+    background-color: #AED6F1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #117A65;
+  }
+  
+  table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid #117A65;
+    background-color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  th {
+    background-color: #117A65;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+  
+  td {
+    border: 1px solid #117A65;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
+  

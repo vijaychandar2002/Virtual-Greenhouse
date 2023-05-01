@@ -1,0 +1,54 @@
+body.greenhouse {
+    background-color: #e2e2e2;
+  }
+  
+  .border {
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    max-width: 600px;
+  }
+  
+  .header {
+    background-color: #74c69d;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .word {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .bottom {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #74c69d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #269d70;
+  }
+  
+  .topright {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greenhouse Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <!-- Load Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Greenhouse Dashboard</h1>
+    </header>
+    <main>
+      <section class="greenhouse-status">
+        <h2>Greenhouse Status</h2>
+        <div class="chart-container">
+          <canvas id="temp-chart"></canvas>
+          <canvas id="humidity-chart"></canvas>
+          <canvas id="light-chart"></canvas>
+        </div>
+      </section>
+      <section class="plant-status">
+        <h2>Plant Status</h2>
+        <div class="chart-container">
+          <canvas id="water-level-chart"></canvas>
+          <canvas id="ph-chart"></canvas>
+          <canvas id="nutrients-chart"></canvas>
+        </div>
+      </section>
+      <section class="sensor-status">
+        <h2>Sensor Status</h2>
+        <div class="chart-container">
+          <canvas id="sensor-1-chart"></canvas>
+          <canvas id="sensor-2-chart"></canvas>
+          <canvas id="sensor-3-chart"></canvas>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

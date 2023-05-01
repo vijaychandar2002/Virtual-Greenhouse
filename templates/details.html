@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Greenhouse</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='details.css') }}">
+</head>
+<body>
+	<header>
+        <h1 id="my-element">Add Greenhouse</h1>
+        <a href="{{ url_for('logout') }}" class="btn" id="logout-btn">Logout</a>
+      </header>      
+	<main>
+		<form action="{{ url_for('create_greenhouse') }}" method="POST">
+			<label for="location">Location:</label>
+			<input type="text" id="location" name="location" required>
+
+			<label for="plantname">Greenhouse Name:</label>
+			<input type="text" id="greenhouse_name" name="greenhouse_name" required>
+
+			<label for="sensors">Sensors:</label>
+			<input type="text" id="sensors" name="sensors" required>
+
+			<label for="length">Length:</label>
+			<input type="number" id="length" name="length" required>
+
+			<label for="width" id="down">Width:</label>
+			<input type="number" id="width" name="width" required>
+
+			<input type="submit" class="btn" value="Create Greenhouse">
+		</form>
+		
+	</main>
+</body>
+</html>
